@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.application.api;
+package dev.tribos.wakandacity.cidadao.application.api.data.request;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -7,7 +7,9 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import dev.tribos.wakandacity.cidadao.domain.Cidadao;
+import lombok.Getter;
 
+@Getter
 public class CidadaoForm {
 	@Size(min = 3, message = "Quantidade de caracteres não bate no limite minimo de 3 caracteres!")
 	@Size(max = 260, message = "Quantidade de caracteres excede o limite de 260 caracteres!")

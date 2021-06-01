@@ -2,6 +2,7 @@ package dev.tribos.wakandacity.cidadao.domain;
 
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,8 +22,9 @@ public class Cidadao {
 	
 	private String apelido;
 	
+	@Column(unique=true)
 	private String whatsapp;
-	
+	@Column(unique=true)
 	private String email;
 	
 	private String cidadeUF;
