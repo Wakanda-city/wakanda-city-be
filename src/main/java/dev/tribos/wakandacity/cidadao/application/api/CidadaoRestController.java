@@ -21,7 +21,7 @@ public class CidadaoRestController implements CidadaoAPI {
 	public ResponseEntity<CidadaoDTO> preCadastraCidadao(CidadaoForm cidadaoForm, UriComponentsBuilder uriBuilder) {
 		log.info("[Inicia] CidadaoRestController - preCadastraCidadao");
 		log.info("Form: {}", cidadaoForm);
-		Cidadao cidadao = cidadaoService.preCadastraCidadao(cidadaoForm);
+		Cidadao cidadao = cidadaoService.preCadastraCidadao(cidadaoForm.toCidadao());
 		URI uri = uriBuilder.path("/cidadao/{id}").buildAndExpand(cidadao.getId()).toUri();
 		log.info("[Finaliza] CidadaoRestController - preCadastraCidadao");
 		return ResponseEntity.created(uri).body(new CidadaoDTO(cidadao));
