@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.repository;
+package dev.tribos.wakandacity.cidadao.infrastructure;
 
 import java.util.UUID;
 
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import dev.tribos.wakandacity.cidadao.domain.Cidadao;
 
 @Repository
-public interface CidadaoRepository extends  JpaRepository<Cidadao, UUID> {
+public interface CidadaoSpringDataJPARepository extends JpaRepository<Cidadao, UUID> {
 
 }
