@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.application.api.controller;
+package dev.tribos.wakandacity.cidadao.application.api;
 
 import javax.validation.Valid;
 
@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import dev.tribos.wakandacity.cidadao.application.api.data.request.CidadaoForm;
-import dev.tribos.wakandacity.cidadao.application.api.data.response.CidadaoDTO;
 
 @RestController
 @RequestMapping("/v1/cidadao")

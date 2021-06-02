@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.application.api.data.request;
+package dev.tribos.wakandacity.cidadao.application.api;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;

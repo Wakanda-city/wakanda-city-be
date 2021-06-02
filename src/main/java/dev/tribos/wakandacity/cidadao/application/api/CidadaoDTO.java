@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.application.api.data.response;
+package dev.tribos.wakandacity.cidadao.application.api;
 
 import dev.tribos.wakandacity.cidadao.domain.Cidadao;
 import lombok.Getter;

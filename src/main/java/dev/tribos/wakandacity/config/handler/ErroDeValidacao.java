@@ -14,20 +14,14 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import dev.tribos.wakandacity.config.handler.dto.ErroDeFormularioDto;
 
-
-
 @RestControllerAdvice
 public class ErroDeValidacao {
-	
+
 	private MessageSource messageSource;
-	
-	
-	
+
 	public ErroDeValidacao(MessageSource messageSource) {
 		this.messageSource = messageSource;
 	}
-
-
 
 	@ResponseStatus(code = HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(MethodArgumentNotValidException.class)
@@ -37,11 +31,11 @@ public class ErroDeValidacao {
 		fieldErros.forEach(e -> {
 			String mensagem = messageSource.getMessage(e, LocaleContextHolder.getLocale());
 			ErroDeFormularioDto erro = new ErroDeFormularioDto(e.getField(), mensagem);
-		    dto.add(erro);	
+			dto.add(erro);
 		});
-		     
+
 		return dto;
-		
+
 	}
 
 }
