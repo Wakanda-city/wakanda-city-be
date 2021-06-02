@@ -1,20 +1,19 @@
-package dev.tribos.wakandacity.cidadao.service.impl;
+package dev.tribos.wakandacity.cidadao.application.service;
 
 import org.springframework.stereotype.Service;
 
-import dev.tribos.wakandacity.cidadao.Repository.CidadaoRepository;
 import dev.tribos.wakandacity.cidadao.application.api.data.request.CidadaoForm;
 import dev.tribos.wakandacity.cidadao.domain.Cidadao;
-import dev.tribos.wakandacity.cidadao.service.CidadaoService;
+import dev.tribos.wakandacity.cidadao.repository.CidadaoRepository;
 import lombok.extern.log4j.Log4j2;
 
 @Service
 @Log4j2
-public class CidadaoSpringDataJPAServiceImpl implements CidadaoService {
+public class CidadaoSpringDataJPAService implements CidadaoService {
 
 	private CidadaoRepository cidadaoRepository;
 
-	public CidadaoSpringDataJPAServiceImpl(CidadaoRepository cidadaoRepository) {
+	public CidadaoSpringDataJPAService(CidadaoRepository cidadaoRepository) {
 		this.cidadaoRepository = cidadaoRepository;
 	}
 

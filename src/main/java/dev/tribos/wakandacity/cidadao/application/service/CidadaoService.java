@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.service;
+package dev.tribos.wakandacity.cidadao.application.service;
 
 
 

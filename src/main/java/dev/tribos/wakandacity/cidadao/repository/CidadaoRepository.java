@@ -1,4 +1,4 @@
-package dev.tribos.wakandacity.cidadao.Repository;
+package dev.tribos.wakandacity.cidadao.repository;
 
 import java.util.UUID;
 

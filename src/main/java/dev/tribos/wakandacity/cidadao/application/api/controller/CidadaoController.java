@@ -11,8 +11,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import dev.tribos.wakandacity.cidadao.application.api.data.request.CidadaoForm;
 import dev.tribos.wakandacity.cidadao.application.api.data.response.CidadaoDTO;
+import dev.tribos.wakandacity.cidadao.application.service.CidadaoService;
 import dev.tribos.wakandacity.cidadao.domain.Cidadao;
-import dev.tribos.wakandacity.cidadao.service.CidadaoService;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
