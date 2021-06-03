@@ -27,5 +27,5 @@ public class Cidadao {
 	@Column(unique=true)
 	private String email;
 	
-	private String cidadeUF;
+	private String codigoMunicipio;
 }

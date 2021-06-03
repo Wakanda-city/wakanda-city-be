@@ -12,13 +12,13 @@ public class CidadaoDTO {
 
 	private String email;
 
-	private String cidadeUF;
+	private String codigoMunicipio;
 
 	public CidadaoDTO(Cidadao cidadao) {
 		this.apelido = cidadao.getApelido();
 		this.whatsapp = cidadao.getWhatsapp();
 		this.email = cidadao.getEmail();
-		this.cidadeUF = cidadao.getCidadeUF();
+		this.codigoMunicipio = cidadao.getCodigoMunicipio();
 	}
 
 }

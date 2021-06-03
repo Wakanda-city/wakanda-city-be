@@ -27,16 +27,16 @@ public class CidadaoForm {
 	@Email(message = "E-mail no formato inválido")
 	private String email;
 
-	@NotNull(message = "cidadeUF não pode ser null")
+	@NotNull(message = "codigoMunicipio não pode ser null")
 	@NotEmpty(message = "Campo obrigatório")
-	private String cidadeUF;
+	private String codigoMunicipio;
 
 	public Cidadao toCidadao() {
 		return Cidadao.builder()
 				.apelido(apelido)
 				.whatsapp(whatsapp)
 				.email(email)
-				.cidadeUF(cidadeUF)
+				.codigoMunicipio(codigoMunicipio)
 				.build();
 	}
 }
