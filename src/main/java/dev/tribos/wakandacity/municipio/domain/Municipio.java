@@ -27,6 +27,6 @@ public class Municipio {
     
 	@NotNull
 	@NotBlank
-	private String descrição;
+	private String descricao;
 
 }
