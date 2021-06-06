@@ -11,5 +11,5 @@ import dev.tribos.wakandacity.municipio.domain.Municipio;
 public interface MunicipioSpringDataJpaRepository extends JpaRepository<Municipio,String>{
 
 	
-		Municipio buscaMunicipio (String municipio);
+		Municipio findbymunicipio (String municipio);
 }

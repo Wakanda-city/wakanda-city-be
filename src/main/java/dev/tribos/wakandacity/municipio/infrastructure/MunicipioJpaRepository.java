@@ -17,7 +17,7 @@ public class MunicipioJpaRepository implements MunicipioRepository{
 	@Override
 	public Municipio buscaMunicipio(String municipio) {
 		log.info("[Inicia] MunicipioJpaRepository - buscaMunicipio");
-		Municipio retonarMunicipio = orcamentoSpringDataJPARepository.buscaMunicipio(municipio) ; 
+				Municipio retonarMunicipio = orcamentoSpringDataJPARepository.findbymunicipio(municipio) ; 
 		log.info("[Finaliza] MunicipioJpaRepository - buscaMunicipio");
 		return retonarMunicipio ;
 	}
