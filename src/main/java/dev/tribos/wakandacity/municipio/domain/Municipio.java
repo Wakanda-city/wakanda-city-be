@@ -22,13 +22,13 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Municipio {
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	//private UUID id;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private UUID id;
-
-	private String name;
 	private Integer codigo;
+	private String nome;
 	private String uf;
-	private String descricao;
+	
 
 }

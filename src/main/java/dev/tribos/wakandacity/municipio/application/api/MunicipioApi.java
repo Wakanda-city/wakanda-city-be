@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/v1/municipio")
 public interface MunicipioApi {
 	
-	@GetMapping(value = "/{name}")
+	@GetMapping(value = "/{nome}")
 	@ResponseStatus(value = HttpStatus.OK)
-	List<MunicipiosDTO> buscaMunicipios(@PathVariable String name);
+	List<MunicipiosDTO> buscaMunicipios(@PathVariable String nome);
 
 
 }

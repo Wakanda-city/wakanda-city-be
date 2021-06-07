@@ -9,16 +9,16 @@ import lombok.Getter;
 @Getter
 public class MunicipiosDTO {
 
-	private String name;
+	private String nome;
 	private Integer codigo;
 	private String uf;
-	private String descricao;
+	
 
 	public MunicipiosDTO(Municipio municipio) {
-		this.name = municipio.getName();
+		this.nome = municipio.getNome();
 		this.codigo = municipio.getCodigo();
 		this.uf = municipio.getUf();
-		this.descricao = municipio.getDescricao();
+		
 	}
 
 	public static List<MunicipiosDTO> convert(List<Municipio> buscaMunicipiosPorDescricao) {

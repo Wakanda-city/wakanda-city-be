@@ -16,8 +16,8 @@ public class MunicipiosController implements MunicipioApi {
   private MunicipioService municipiosService;
   
 	@Override
-	public List<MunicipiosDTO> buscaMunicipios(String name) {
-		List<Municipio> buscaMunicipiosPorDescricao = municipiosService.buscaMunicipioService(name);
+	public List<MunicipiosDTO> buscaMunicipios(String nome) {
+		List<Municipio> buscaMunicipiosPorDescricao = municipiosService.buscaMunicipioService(nome);
 		List<MunicipiosDTO> ListaDeMunicipiosPorDescricao = MunicipiosDTO.convert(buscaMunicipiosPorDescricao);
 		
 		return ListaDeMunicipiosPorDescricao;

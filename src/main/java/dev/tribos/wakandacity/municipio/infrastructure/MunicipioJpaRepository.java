@@ -18,7 +18,7 @@ public class MunicipioJpaRepository implements MunicipioRepository{
 	@Override
 	public List<Municipio> buscaMunicipio(String name) {
 		log.info("[Inicia] MunicipioJpaRepository - buscaMunicipio");
-				List<Municipio> retonarMunicipio = orcamentoSpringDataJPARepository.findByNameContainingIgnoreCase(name); 
+				List<Municipio> retonarMunicipio = orcamentoSpringDataJPARepository.findByNomeContainingIgnoreCase(name); 
 		log.info("[Finaliza] MunicipioJpaRepository - buscaMunicipio");
 		return retonarMunicipio ;
 	}

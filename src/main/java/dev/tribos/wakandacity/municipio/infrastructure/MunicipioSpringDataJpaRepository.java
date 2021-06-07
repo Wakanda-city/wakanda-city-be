@@ -12,5 +12,5 @@ import dev.tribos.wakandacity.municipio.domain.Municipio;
 public interface MunicipioSpringDataJpaRepository extends JpaRepository<Municipio,String>{
 
 	
-		List<Municipio> findByNameContainingIgnoreCase(String name);
+		List<Municipio> findByNomeContainingIgnoreCase(String name);
 }
