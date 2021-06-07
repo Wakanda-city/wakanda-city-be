@@ -3,7 +3,7 @@ package dev.tribos.wakandacity.municipio.application.service;
 
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
+
 import org.springframework.stereotype.Service;
 
 
@@ -25,7 +25,7 @@ public class MunicipioSpringDataJPAService implements MunicipioService {
 		log.info("[Inicia] MunicipioSpringDataJPAService - buscaMunicipio");
 		if(municipio == null || municipio.isEmpty()) {return null;}
 		List<Municipio> respMunicipio = this.municipioRepository.buscaMunicipio(municipio);
-							
+			
 		log.info("[Finaliza] MunicipioSpringDataJPAService - buscaMunicipio");
 		return respMunicipio; 
 		

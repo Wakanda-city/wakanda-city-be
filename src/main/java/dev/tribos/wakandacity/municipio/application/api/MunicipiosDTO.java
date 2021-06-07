@@ -21,7 +21,7 @@ public class MunicipiosDTO {
 		
 	}
 
-	public static List<MunicipiosDTO> convert(List<Municipio> buscaMunicipiosPorDescricao) {
+	public static List<MunicipiosDTO> parseListDTO(List<Municipio> buscaMunicipiosPorDescricao) {
 		return buscaMunicipiosPorDescricao.stream().map(MunicipiosDTO::new).collect(Collectors.toList());
 
 	}
