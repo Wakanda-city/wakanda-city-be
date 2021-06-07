@@ -1,7 +1,7 @@
 server:
  port: 8080
  servlet:
-    context-path: /wakanda/app
+    context-path: /wakanda-city/app
 
 spring:
   datasource:
