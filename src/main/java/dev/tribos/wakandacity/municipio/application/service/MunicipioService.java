@@ -2,7 +2,7 @@ package dev.tribos.wakandacity.municipio.application.service;
 
 
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import dev.tribos.wakandacity.municipio.domain.Municipio;
 
@@ -10,7 +10,7 @@ import dev.tribos.wakandacity.municipio.domain.Municipio;
 public interface MunicipioService {
 	
 
-	Municipio buscaMunicipioService (String municipio);
+	List<Municipio> buscaMunicipioService (String name);
 	
 
 }

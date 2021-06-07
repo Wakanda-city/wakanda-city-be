@@ -1,7 +1,8 @@
 package dev.tribos.wakandacity.municipio.infrastructure;
 
 
-import java.util.Optional;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +12,5 @@ import dev.tribos.wakandacity.municipio.domain.Municipio;
 public interface MunicipioSpringDataJpaRepository extends JpaRepository<Municipio,String>{
 
 	
-		Municipio findbymunicipio (String municipio);
+		List<Municipio> findByNameContainingIgnoreCase(String name);
 }
