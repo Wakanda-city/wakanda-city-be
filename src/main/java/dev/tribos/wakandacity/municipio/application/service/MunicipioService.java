@@ -10,7 +10,7 @@ import dev.tribos.wakandacity.municipio.domain.Municipio;
 public interface MunicipioService {
 	
 
-	List<Municipio> buscaMunicipioService (String name);
+	List<Municipio> buscaMunicipioService (String nome);
 	
 
 }

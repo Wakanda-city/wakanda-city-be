@@ -16,7 +16,9 @@
 	<description>backEnd para o projeto nosso dinheiro</description>
 	<properties>
 		<java.version>11</java.version>
-		<swagger2.version>2.8.0</swagger2.version>
+
+		<swagger.version>1.5.9</swagger.version>
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -67,6 +69,12 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
 	</dependencies>
 

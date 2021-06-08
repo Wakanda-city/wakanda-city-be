@@ -17,12 +17,17 @@ public class MunicipiosController implements MunicipioApi {
   private MunicipioService municipiosService;
   
 	@Override
-	public List<MunicipiosDTO> buscaMunicipios(MunicipioForm nome) {
+	public List<MunicipiosDTO> buscaMunicipios(String nome  ) { // { monte }
+		
 		log.info("[Inicia] MunicipiosController - buscaMunicipios");
-		List<Municipio> buscaMunicipiosPorDescricao = municipiosService.buscaMunicipioService(nome.getNome());
-		//List<MunicipiosDTO> ListaDeMunicipiosPorDescricao = MunicipiosDTO.convert(buscaMunicipiosPorDescricao);
+		
+		
+		List<Municipio> buscaMunicipiosPorDescricao = municipiosService.buscaMunicipioService(nome); // { EUnapolis} 
+		
+		///lista  { EUnapolis, Go Codigo } 
+		
 		log.info("[Finaliza] MunicipiosController - buscaMunicipios");
-		//return ListaDeMunicipiosPorDescricao;
+	
 		return MunicipiosDTO.parseListDTO(buscaMunicipiosPorDescricao);
 	}
 
