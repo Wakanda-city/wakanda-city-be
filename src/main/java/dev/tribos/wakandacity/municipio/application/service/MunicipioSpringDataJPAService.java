@@ -24,14 +24,7 @@ public class MunicipioSpringDataJPAService implements MunicipioService {
 	public List<Municipio> buscaMunicipioService (String municipio) {
 		
 		log.info("[Inicia] MunicipioSpringDataJPAService - buscaMunicipio");
-		//if(municipio == null || municipio.isEmpty()) {return null;}
-		
-		List<Municipio> respMunicipio = this.municipioRepository.buscaMunicipio(municipio)
-				.orElseThrow(() -> ApiException.throwApiException(HttpStatus.BAD_REQUEST, "Cidade não Encontrada!"));
-		
-		
-
-		
+		 List<Municipio> respMunicipio = this.municipioRepository.buscaMunicipio(municipio);
 		log.info("[Finaliza] MunicipioSpringDataJPAService - buscaMunicipio");
 		return respMunicipio; 
 		

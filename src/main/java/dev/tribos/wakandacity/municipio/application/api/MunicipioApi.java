@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sun.istack.NotNull;
+
 
 
 @RestController
@@ -17,7 +19,6 @@ public interface MunicipioApi {
 	
 	@GetMapping(value = "/{nome}")
 	@ResponseStatus(value = HttpStatus.OK)
-		List<MunicipiosDTO> buscaMunicipios(@PathVariable String nome);
-
+		List<MunicipiosDTO> buscaMunicipios(@PathVariable  String nome);
 
 }
