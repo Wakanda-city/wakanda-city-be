@@ -1,9 +1,7 @@
 server:
  port: 8080
  servlet:
-
     context-path: /wakanda-city/app
-
 
 spring:
   datasource:
@@ -16,5 +14,4 @@ spring:
       enabled: true
       path: /h2
   jpa:
-
     database-platform: org.hibernate.dialect.H2Dialect

@@ -16,9 +16,7 @@
 	<description>backEnd para o projeto nosso dinheiro</description>
 	<properties>
 		<java.version>11</java.version>
-
 		<swagger.version>1.5.9</swagger.version>
-
 	</properties>
 	<dependencies>
 		<dependency>
@@ -49,8 +47,6 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
