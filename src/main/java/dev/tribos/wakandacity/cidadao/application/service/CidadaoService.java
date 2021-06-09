@@ -4,4 +4,4 @@ import dev.tribos.wakandacity.cidadao.domain.Cidadao;
 
 public interface CidadaoService {
 	Cidadao preCadastraCidadao(Cidadao cidadao);
-}
+} 

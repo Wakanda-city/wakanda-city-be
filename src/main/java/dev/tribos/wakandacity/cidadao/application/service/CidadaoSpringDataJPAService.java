@@ -20,7 +20,7 @@ public class CidadaoSpringDataJPAService implements CidadaoService {
 		log.info("[Finaliza] CidadaoSpringDataJPAService - preCadastraCidadao");
 		return cidadaoSalvo;
 	}
-	
+
 	private Cidadao salvaCidadao(Cidadao cidadao) {
 			return cidadaoRepository.save(cidadao);
 	}
