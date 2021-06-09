@@ -22,6 +22,6 @@ public interface MunicipioApi {
 
 	@GetMapping(value = "/{nome}")
 	@ResponseStatus(value = HttpStatus.OK)
-	List<MunicipiosDTO> buscaMunicipios(@PathVariable(required = false) @Valid @NotBlank @Min(1) String nome);
+	List<MunicipiosDTO> buscaMunicipios(@PathVariable String nome);
 
 }
