@@ -12,13 +12,12 @@ public class MunicipiosDTO {
 	private String nome;
 	private Integer codigo;
 	private String uf;
-	
 
 	public MunicipiosDTO(Municipio municipio) {
 		this.nome = municipio.getNome();
 		this.codigo = municipio.getCodigo();
 		this.uf = municipio.getUf();
-		
+
 	}
 
 	public static List<MunicipiosDTO> parseListDTO(List<Municipio> buscaMunicipiosPorDescricao) {

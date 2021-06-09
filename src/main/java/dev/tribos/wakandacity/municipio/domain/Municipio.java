@@ -8,7 +8,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-
 @Entity
 @Builder
 @Getter
@@ -18,10 +17,11 @@ public class Municipio {
 
 	@Id
 	private Integer codigo;
+
 	@NotNull
 	private String nome;
+
 	@NotNull
 	private String uf;
-	
 
 }

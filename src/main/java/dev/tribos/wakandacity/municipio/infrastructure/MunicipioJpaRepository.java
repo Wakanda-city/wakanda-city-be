@@ -12,17 +12,15 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @AllArgsConstructor
 @Component
-public class MunicipioJpaRepository implements MunicipioRepository{
+public class MunicipioJpaRepository implements MunicipioRepository {
 	private MunicipioSpringDataJpaRepository orcamentoSpringDataJPARepository;
 
 	@Override
 	public List<Municipio> buscaMunicipio(String name) {
 		log.info("[Inicia] MunicipioJpaRepository - buscaMunicipio");
-				List<Municipio> retonarMunicipio = orcamentoSpringDataJPARepository.findByNomeContainingIgnoreCase(name); 
+		List<Municipio> retonarMunicipio = orcamentoSpringDataJPARepository.findByNomeContainingIgnoreCase(name);
 		log.info("[Finaliza] MunicipioJpaRepository - buscaMunicipio");
-		return retonarMunicipio ;
+		return retonarMunicipio;
 	}
-	
-	
 
 }
