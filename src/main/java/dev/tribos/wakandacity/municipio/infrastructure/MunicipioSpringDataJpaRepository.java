@@ -12,5 +12,5 @@ public interface MunicipioSpringDataJpaRepository extends JpaRepository<Municipi
 
 
 	List<Municipio> findByNomeStartingWithIgnoreCase(String name);
-	//List<Municipio> findByNomeContainingIgnoreCase(String name);
+	
 }
